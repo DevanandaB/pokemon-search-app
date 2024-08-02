@@ -7,14 +7,13 @@ h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
     padding: 8px;
-    padding-bottom: 25px;
 }
 .container {
     background-color: rgb(102, 207, 172);
     border: 5px solid rgb(102, 207, 172);
-    width: 32%;
+    width: 400px;
     margin: auto;
-    height: 900px;
+    height: 300px;
     border-radius: 20px;
 }
 
@@ -37,4 +36,35 @@ h1 {
 }
 .search-container button:active {
     background-color: rgb(212, 114, 212);
+}
+
+.result-container {
+    width: 388px;
+    height: 710px;
+    background-color: rgb(102, 207, 172);
+    padding: 10px;
+    margin-top: 20px ;
+    margin-left: -4px;
+    border-radius: 10px;
+}
+.result-container .result-display {
+    background-color: rgb(119, 210, 180);
+    width: 360px;
+    height: 260px;
+    margin: 0 16px;
+}
+.result-container .result-table {
+    background-color: rgb(171, 59, 199);
+    width: 360px;
+    height: 400px;
+    margin: 35px 15px 0px;
+}
+.result-container .result-table .header {
+    background-color: rgb(212, 118, 221);
+    border: none;
+}
+.result-container .result-table th {
+    color: white;
+    font-size: 17px;
+    border: 2px solid rgb(212, 118, 221);
 }
