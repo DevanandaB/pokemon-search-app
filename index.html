@@ -10,13 +10,30 @@
     <h1>Pokemon Search App</h1>
 
     <div class="container">
+
         <div class="search-container">
             <p>Search for pokemon name or ID:</p>
-            <input>
-            <button>Search</button>
+            <input id=search-input type="text" required>
+            <button id="search-btn">Search</button>
         </div>
+
+
         <div class="result-container">
-            <div class="result-display"></div>
+            <div class="result-display">
+                <div class="pokemon">
+                    <h5 id="pokemon-name"></h5>
+                    <h5 id="pokemon-id"></h5>
+                </div>
+                <div class="weight">
+                    <h4 id="pokemon-weight"></h4>
+                </div>
+                <div class="height">
+                    <h4 id="pokemon-height"></h4>
+                </div>
+                <div class="img-container"></div>
+                <div class="types" id="types"></div>
+            </div>
+
             <table class="result-table">
                 <colgroup>
                     <th class="header">Base</th>
@@ -47,6 +64,7 @@
                     <th id="speed"></th>
                 </tr>
             </table>
+
         </div>
     </div>
 
