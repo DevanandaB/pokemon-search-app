@@ -38,16 +38,6 @@ const colours = {
 	fairy: '#D685AD',
 };
 
-// searchBtn.addEventListener("click", () => {
-//     let input = searchInput.value;
-//     if(input == "1") {
-//         pokemonName.textContent = 'BULBASAUR';
-//         pokemonId.innerText = '#1'; 
-//         pokemonWeight.innerText = 'Weight: 69';
-//         pokemonHeight.innerText = 'Height: 7'; 
-//         imgContainer.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png";
-//         types.innerText = 'GRASS', "POSION";
-//     } else {
-//         alert("the others");
-//     }
-// });
+fetch("apiUrl")
+	.then((res) => res.json()).then((data) => {console.log(data)})
+	.catch((err) => console.log(`There was an error: ${err}`));
