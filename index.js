@@ -42,9 +42,13 @@ fetch("apiUrl")
 	.then((res) => res.json()).then((data) => {console.log(data)})
 	.catch((err) => console.log(`There was an error: ${err}`));
 
-// if (searchInput.value == 1) {
-// 	{
-// 	'count': 1304,
-// 	"results" : [{"id":1,"name":"bulbasaur","url":"https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/1/"},]
-// 	}
-// }
+searchBtn.addEventListener("click", ()=> {
+	if (searchInput.value == 1) {
+		array = {
+		'count': 1304,
+		"results" : [{"id":1,"name":"bulbasaur","url":"https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/1/"},]
+		}
+	} else {
+		console.log("not 1")
+	}
+})
